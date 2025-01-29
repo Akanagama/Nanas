@@ -64,4 +64,27 @@ document.addEventListener("DOMContentLoaded", () => {
             scrollTopButton.style.display = 'none';
         }
     });
+
+    
 });
+// En script.js
+// Navbar Toggle
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+// Navbar Scroll Effect
+window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+
+// Cerrar menú al hacer click en un enlace
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));

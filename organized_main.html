@@ -15,24 +15,27 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <div class="header-main">
-            <div class="logo">
-                <img src="Recursos Nanas/logo-300x151.png" alt="Nanas & Amas">
+    <!-- En organized_main.html (dentro del <header>) -->
+    <header class="header-main">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Recursos Nanas/logo-300x151.png" alt="Nanas & Amas" class="logo">
             </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotras">Nosotras</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#empleo">¿Buscas Empleo?</a></li>
-                    <li><a href="#premios">Premios</a></li>
-                    <li><a href="#responsabilidad">Responsabilidad Social</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contacto">Contáctanos</a></li>
-                </ul>
-            </nav>
-        </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="#nosotras" class="nav-link">Nosotras</a></li>
+                <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="#empleo" class="nav-link">Empleo</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
     <!--Bienvenida-->
     <section id="bienvenida" class="welcome-section">
@@ -206,18 +209,6 @@
 <!-- Sección de Contactos -->
 <section id="contactos" class="contact-section">
     <div class="contact-container">
-        <!-- Oficina Chacarilla -->
-        <div class="contact-item">
-            <h3>Nanas & Amas Los Jardines</h3>
-            <p>
-                <i class="fa fa-map-marker"></i> Av. Primavera 120 A-217 Chacarilla - Surco <br>
-                C.C. Tambo de Monterrico 2º piso <br>
-                (esquina con cuadra 1 de Caminos del Inca, a la espalda de Wong)
-            </p>
-            <p><i class="fa fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/988019200" target="_blank">988-019-200</a></p>
-            <p><i class="fa fa-envelope"></i> <a href="mailto:primavera@nanasyamas.com">primavera@nanasyamas.com</a></p>
-        </div>
-
         <!-- Oficina Camacho -->
         <div class="contact-item">
             <h3>Nanas & Amas Cortijo</h3>
@@ -227,7 +218,7 @@
                 (espalda de la cuadra 52 de Javier Prado Este, frente al club El Bosque)
             </p>
             <p><i class="fa fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/970426635" target="_blank">970-426-635</a></p>
-            <p><i class="fa fa-envelope"></i> <a href="informes@nanasyamasperu.com">informes@nanasyamasperi.com</a></p>
+            <p><i class="fa fa-envelope"></i> <a href="informes@nanasyamasperu.com">informes@nanasyamasperu.com</a></p>
         </div>
     </div>
 
