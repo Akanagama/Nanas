@@ -1,0 +1,713 @@
+/* Importar fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@400;600&display=swap');
+
+/* Variables para colores y fuentes */
+:root {
+    --main-color: #F42D6B;
+    --secondary-color: #F08D9F;
+    --font-primary: 'Bebas Neue', sans-serif;
+    --font-secondary: 'League Spartan', sans-serif;
+}
+
+/* Configuración general */
+body {
+    font-family: var(--font-secondary);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para encabezados (Fuente Principal) */
+h1 {
+    font-family: var(--font-primary);
+    font-weight: normal;
+    color: #000000;
+    margin: 0 0 15px;
+    text-align: center;
+}
+h2 {
+    font-size: 3em; /* Tamaño más grande para el encabezado */
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: var(--font-primary);
+    font-weight: normal;
+    color: #F42D6B;
+    margin: 0 0 15px;
+    text-align: center;
+}
+h3 {
+    font-family: var(--font-primary);
+    font-weight: normal;
+    color: #000000;
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+/* Estilo para párrafos */
+p {
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #faf7f7;
+    text-align: center;
+}
+z {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #000000;
+    text-align: center;
+}
+b {
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #000000;
+    text-align: center;
+}
+/* Estilo para enlaces */
+a {
+    font-family: var(--font-secondary);
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Botones */
+.cta-button {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: var(--main-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+/* Imágenes circulares */
+.welcome-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F6F6F6;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.welcome-item {
+    width: 30%;
+    max-width: 300px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #FEE5E5;
+}
+
+header .header-logo img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+header .menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .menu li a {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    color: var(--main-color);
+    transition: color 0.3s;
+}
+
+header .menu li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Sección Hero */
+.hero {
+    background: url('Recurso Nanas/hero1.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-family: var(--font-primary);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-family: var(--font-secondary);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .welcome-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-item {
+        width: 80%;
+    }
+}
+.clientes-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F6F6F6;
+}
+
+.clientes-section h2 {
+    color: #F42D6B;
+    margin-bottom: 20px;
+}
+
+.carousel-section {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7; /* Fondo opcional */
+    overflow: hidden;
+    text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden; /* Evitar desbordamiento */
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%; /* Asegúrate de que la diapositiva se ajuste al contenedor */
+    box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.swiper-slide img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Hacer la imagen circular */
+    margin-bottom: 20px;
+    border: 4px solid #F42D6B; /* Borde alrededor de la imagen */
+}
+
+.swiper-slide p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+    font-style: italic;
+}
+
+.swiper-slide h4 {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #F42D6B;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .carousel-section h2 {
+        font-size: 2em;
+    }
+
+    .swiper-slide {
+        padding: 15px;
+    }
+
+    .swiper-slide p {
+        font-size: 1em;
+    }
+
+    .swiper-slide h4 {
+        font-size: 0.9em;
+    }
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.texto-destacado {
+    font-size: 2.5em; /* Aumenta el tamaño de fuente */
+    font-weight: bold; /* Opcional: hace el texto más grueso */
+    text-align: center; /* Centra el texto */
+    line-height: 1.8; /* Aumenta el espacio entre líneas */
+    color: #333; /* Color del texto */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+}
+
+    /* Estilo general para la sección */
+    .carousel-section {
+        position: relative;
+        height: 500px; /* Ajusta según sea necesario */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        text-align: center;
+        overflow: hidden;
+        text-shadow: 0 4px 6px rgb(0, 0, 0);
+    }
+
+.carousel-text {
+    position: absolute;
+    z-index: 2;
+    padding: 20px;
+}
+.carousel-section p {
+    font-size: 1.5em; /* Aumentar el tamaño del párrafo */
+    line-height: 1.8; /* Mejorar la separación de líneas */
+    margin: 0 10px; /* Margen lateral opcional */
+}
+.carousel-text h2 {
+    font-size: 4.5em;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 6px rgba(8, 8, 8, 0.484); /* Sombra en el texto */
+}
+
+.carousel-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+.carousel-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: fadeEffect 20s infinite; /* Duración total de cambio */
+}
+
+.carousel-image {
+    flex: 0 0 100%; /* Cada imagen ocupa todo el ancho */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%) blur(2px); /* Desvanecido para resaltar el texto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    animation: fadeInOut 20s infinite;
+}
+
+.carousel-image:nth-child(1) {
+    animation-delay: 0s;
+}
+.carousel-image:nth-child(2) {
+    animation-delay: 5s;
+}
+.carousel-image:nth-child(3) {
+    animation-delay: 10s;
+}
+.carousel-image:nth-child(4) {
+    animation-delay: 15s;
+}
+
+/* Animaciones */
+@keyframes fadeInOut {
+    25%, 25% {
+        opacity: 0;
+    }
+    25%, 25% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    0%, 100% {
+        transform: translateX(0%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    25% {
+        transform: translateX(-300%);
+    }
+}
+.services-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    width: 30%;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item h3 {
+    color: #F42D6B;
+    font-family: var(--font-primary);
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #555;
+    font-family: var(--font-secondary);
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.cta-button {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.parallax-section {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Sombra para destacar */
+}
+
+.parallax-content h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-family: var(--font-primary);
+    color: var(--main-color);
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.parallax-content p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.parallax-content .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.parallax-content .cta-button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.parallax-section:hover .parallax-image {
+    transform: scale(1.05); /* Zoom leve al pasar el mouse */
+}
+.contact-section {
+    background-color: var(--background-light);
+    padding: 40px 20px;
+    text-align: center;
+    font-family: var(--font-primary);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-item {
+    width: 45%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.contact-item h3 {
+    font-size: 1.5em;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+}
+
+.contact-item p {
+    margin: 10px 0;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.contact-item i {
+    color: var(--secondary-color);
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: var(--footer-bg);
+    color: #ffffff;
+    padding: 20px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: var(--main-color);
+}
+
+.social-icon.tiktok {
+    color: #69C9D0;
+}
+
+.social-icon.facebook {
+    color: #1877F2;
+}
+
+.social-icon.instagram {
+    color: #E1306C;
+}
+
+.social-icon.whatsapp {
+    color: #25D366;
+}
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+.awards-social-responsibility {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    color: #333;
+}
+
+.awards-social-responsibility h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #009688; /* Color principal */
+    margin-bottom: 20px;
+}
+
+.awards-social-responsibility .intro-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.awards, .social-responsibility {
+    flex: 1 1 calc(50% - 20px);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.awards:hover, .social-responsibility:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.awards h3, .social-responsibility h3 {
+    color: #ff5722; /* Color secundario */
+    margin-bottom: 15px;
+}
+
+.awards ul, .social-responsibility ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.awards ul li, .social-responsibility ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.awards ul li::before, .social-responsibility ul li::before {
+    content: "•";
+    color: #009688; /* Color principal */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.social-responsibility p {
+    margin: 15px 0;
+    color: #666;
+}
